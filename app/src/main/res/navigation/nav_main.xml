@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainTodayFragment">
+    <fragment
+        android:id="@+id/mainTodayFragment"
+        android:name="com.example.memoi.MainTodayFragment"
+        android:label="fragment_main_todo"
+        tools:layout="@layout/fragment_main_today" >
+        <action
+            android:id="@+id/action_mainTodayFragment_to_mainTodoFragment"
+            app:destination="@id/mainTodoFragment" />
+        <action
+            android:id="@+id/action_mainTodayFragment_to_addNewFragment"
+            app:destination="@id/addNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainTodoFragment"
+        android:name="com.example.memoi.MainTodoFragment"
+        android:label="MainTodoFragment"
+        tools:layout="@layout/fragment_main_todo" >
+        <action
+            android:id="@+id/action_mainTodoFragment_to_mainTodayFragment"
+            app:destination="@id/mainTodayFragment" />
+        <action
+            android:id="@+id/action_mainTodoFragment_to_addNewFragment"
+            app:destination="@id/addNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewFragment"
+        android:name="com.example.memoi.AddNewFragment"
+        android:label="add_new_fragment"
+        tools:layout="@layout/add_new_fragment" >
+        <action
+            android:id="@+id/action_addNewFragment_to_mainTodayFragment"
+            app:destination="@id/mainTodayFragment" />
+        <action
+            android:id="@+id/action_addNewFragment_to_mainTodoFragment"
+            app:destination="@id/mainTodoFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainTodayFragment"
+        android:icon="@drawable/ic_baseline_today"
+        android:title="Today" />
+
+    <item
+        android:id="@+id/mainTodoFragment"
+        android:icon="@drawable/ic_baseline_tasks"
+        android:title="All" />
+
+</menu>

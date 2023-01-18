@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1023030483049",
+    "firebase_url": "https://memoi-bced4-default-rtdb.firebaseio.com",
+    "project_id": "memoi-bced4",
+    "storage_bucket": "memoi-bced4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023030483049:android:4f8313193f7ebe58ff2af8",
+        "android_client_info": {
+          "package_name": "com.example.memoi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023030483049-7t7se52rrj4bif0vsu5ck2f741f5tdbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5V7WPh3DKRci2SBu8IPbOlgkEnSZ_OBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023030483049-7t7se52rrj4bif0vsu5ck2f741f5tdbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

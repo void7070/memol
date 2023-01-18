@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_url"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:src="@drawable/url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_url" />
+
+    <EditText
+        android:id="@+id/input_url"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center_vertical"
+        android:hint="URL이 등록되지 않았습니다."
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_url"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_time" />
+
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:src="@drawable/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_set_title" />
+
+    <ImageView
+        android:id="@+id/img_todo_list"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:src="@drawable/todolist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_set_description" />
+
+
+    <EditText
+        android:id="@+id/input_set_title"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center_vertical"
+        android:hint="제목을 입력해주세요."
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_set_description"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center_vertical"
+        android:hint="세부사항을 입력해주세요."
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/input_set_title"
+        app:layout_constraintTop_toBottomOf="@+id/input_set_title" />
+
+    <ImageView
+        android:id="@+id/img_set_date"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:src="@drawable/calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_set_date" />
+
+    <Button
+        android:id="@+id/btn_set_date"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center_vertical"
+        android:hint="날짜를 입력해주세요."
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_set_date"
+        app:layout_constraintTop_toBottomOf="@+id/input_set_description" />
+
+    <ImageView
+        android:id="@+id/img_set_time"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:src="@drawable/clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_set_time" />
+
+    <Button
+        android:id="@+id/btn_set_time"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center_vertical"
+        android:hint="시간을 입력해주세요."
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_set_time"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
